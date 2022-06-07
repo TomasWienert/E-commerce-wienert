@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bazar Marcelo</title>
+  <link rel="stylesheet" href="./css/estilos.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <!-- Fuente de la barra de navegacion -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Noto+Sans:wght@700&family=Oswald:wght@300&display=swap"
+    rel="stylesheet">
+  <!-- fuente del footer -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Josefin+Sans:ital,wght@1,300&family=Noto+Sans:wght@700&family=Oswald:wght@300&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <div class="d-grid gap-2 d-md-flex justify-content-md-end carrito">
+      <a href="#"> <img src="./imagenes/carrito.png" height="38px" width="60px"></a>
+      <button class="btn btn-primary" type="button">Carrito</button>
+    </div>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid d-flex m-3" id="barranav">
+        <img class="m-1" src="./imagenes/logobazar.png" alt="" id="logoBazar">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end m-3" id="navbarSupportedContent">
+          <ul class="navbar-nav navbar navbar-light px-1 py-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Vajilla
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="./pages/tsuji.html">Tsuji</a></li>
+                <li><a class="dropdown-item" href="./pages/verbano.html">Verbano</a></li>
+                <li><a class="dropdown-item" href="./pages/biona.html">Biona</a></li>
+                <li><a class="dropdown-item" href="./pages/corona.html">Corona</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container-fluid fondo-index mb-4">
+    <img src="./imagenes/fondo-bazar.jpg" class="img-fluid" alt="">
+  </div>
+
+  <main id="cuerpo" class="mt-5">
+    <div class="container-fluid pb-5">
+      <section class="row pb-5 px-3">
+        <div class="col-md-6 px-4">
+          <h1 class="titulo py-3 animate__animated animate__tada animate__delay-2s animate__repeat-2">¿Quiénes
+            somos?</h1>
+
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam est placeat repellendus quae
+            recusandae
+            iusto
+            modi veritatis, repudiandae facere omnis dolor labore. Asperiores corrupti modi exercitationem
+            vitae
+            voluptas nam eos! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis dolore
+            quasi fuga voluptatibus, officia provident ut aperiam est doloribus beatae dolorem expedita!
+            Enim dolores distinctio ipsum perspiciatis ipsa culpa debitis!</p>
+        </div>
+        <div class="col-md-6 py-3 px-4" id="video-introductorio">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/YFtRD0iRiFA" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+      </section>
+      <section class="row px-3">
+        <div class="col-md-6 px-4">
+          <h1 class="titulo py-3 animate__animated animate__tada animate__delay-5s animate__repeat-2">¿Dónde
+            estamos?</h1>
+
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam est placeat repellendus quae
+            recusandae
+            iusto
+            modi veritatis, repudiandae facere omnis dolor labore. Asperiores corrupti modi exercitationem
+            vitae
+            voluptas nam eos! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis dolore
+            quasi fuga voluptatibus, officia provident ut aperiam est doloribus beatae dolorem expedita!
+            Enim dolores distinctio ipsum perspiciatis ipsa culpa debitis!</p>
+        </div>
+        <div class="col-md-6 py-3 px-4" id="mapa">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3287.090321514075!2d-58.75107708505492!3d-34.52593956089325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc97f76259882b%3A0x1f429cb7bab035bc!2sGelly%20y%20Obes%204602%2C%20B1665%20GPW%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1648157771282!5m2!1ses-419!2sar"
+            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </section>
+    </div>
+
+    <section class="container-fluid my-3 border-top pt-4">
+      <h2 class="titulo pb-5">A continuación podés ver las distintas marcas de vajilla que tenemos para vos, elegí la tuya y
+        se te direccionará para que puedas ver todos los artículos que te podemos ofrecer</h2>
+      <div class="row">
+        <div class="col-md-6 px-5 d-flex flex-column align-items-center">
+          <a href="./pages/tsuji.html" class="titulo"><h1 class="titulo py-3">Porcelana Tsuji</h1></a>
+          <!-- animate__animated animate__bounceInLeft animate__delay-1s -->
+          <p>
+            <!-- class="animate__animated animate__bounceInLeft animate__delay-2s" -->
+            Vajilla de porcelana de la mas alta calidad y belleza, para deleitar a tus visitas. Muy
+            recomendable para ocaciones especiales.<br>
+            La marca se instala en Argentina en 1952, en Almirante Brown a unos 45 kilómetros de la Capital
+            Federal, en el Sur del Conurbano bonaerense. La gran calidad de esta marca se debe a que la
+            familia Tsuji
+            vino al país desde una zona de Japón en donde el desarrollo ceramista era muy avanzado, por lo
+            que trajo ese conocimiento a su fábrica.
+
+          </p>
+          <a href="./pages/tsuji.html"><img src="./imagenes/vajilla_tsuji.jpg" class="img-fluid"></a>
+          <!-- animate__animated animate__bounceInLeft animate__delay-3s -->
+        </div>
+        <div class="col-md-6 px-5 d-flex flex-column align-items-center">
+          <a href="./pages/verbano.html" class="titulo"><h1 class="titulo py-3">Porcelana Verbano</h1></a>
+          <!-- animate__animated animate__bounceInRight animate__delay-1s -->
+          <p>
+            <!-- class="animate__animated animate__bounceInRight animate__delay-2s" -->
+            Con la vajilla de porcelana Verbano tambien encontrarás belleza y un excelente balance
+            precio-calidad. También es recomendable para ocaciones especiales.<br>
+            Verbano llega al país en 1953, desde entonces se ubicó en nuestro mercado como una
+            de las vajillas de porcelana de mejor calidad. En la época de la pandemia la
+            empresa decidió cerrar las puertas de esta fábrica, por lo que los productos actualmente son
+            importados.
+          </p>
+          <a href="./pages/verbano.html"><img src="./imagenes/vajilla_verbano.jpg" class="img-fluid"></a>
+          <!-- animate__animated animate__bounceInRight animate__delay-3s -->
+        </div>
+      </div>
+    </section>
+    <section class="container-fluid my-5">
+      <div class="row">
+        <!-- animate__animated animate__fadeIn animate__delay-5s -->
+        <div class="col-md-6 px-5 d-flex flex-column align-items-center">
+          <a href="./pages/corona.html" class="titulo"><h1 class="titulo py-3">Loza Corona</h1></a>
+          <p>
+            La vajilla enlozada corona se recomienda utilizar en cualquier ambito, tanto en la mesa de todos
+            los días como en ocaciones especiales. Gran balance precio-calidad. <br>
+
+          </p>
+          <a href="./pages/corona.html"><img src="./imagenes/vajilla_corona.jpg" class="img-fluid"></a>
+        </div>
+        <div class="col-md-6 px-5 d-flex flex-column align-items-center">
+          <a href="./pages/biona.html" class="titulo"><h1 class="titulo py-3">Loza Biona</h1></a>
+          <p>
+            La marca biona ofrece vajilla de cerámica y enlozadas de buena calidad. Es una vajilla atractiva
+            para usar todos los días. Comparado con las vajillas anteriores es la más económica. <br>
+
+          </p>
+          <a href="./pages/biona.html"><img src="./imagenes/vajilla_biona.jpg" class="img-fluid"></a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="container-fluid">
+    <div class="row align-items-center">
+      <div class="col-4 text-center">
+        <h2 class="titulo2">Gelly y Obes 4602, J.C.Paz</h2>
+      </div>
+      <div class="col-5 text-end">
+        <h2 class="titulo2">Seguinos en nuestras redes sociales</h2>
+      </div>
+      <div class="col-1" id="instagram">
+        <a href="https://instagram.com/bazar.y.regaleria?utm_medium=copy_link" target="_blank"> <img
+            src="./imagenes/logoinstagram.png" height="30px" width="30px"></a>
+        <a href="https://instagram.com/bazar.y.regaleria?utm_medium=copy_link" id="redes-text"
+          target="_blank">Instagram</a>
+      </div>
+      <div class="col-2" id="youtube">
+        <a href="https://www.youtube.com/" target="_blank"> <img src="./imagenes/logoyoutube.jpg" height="30px"
+            width="38px"></a>
+        <a href="https://www.youtube.com/" id="redes-text" target="_blank">Youtube</a>
+
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/js.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
