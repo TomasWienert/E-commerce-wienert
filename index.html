@@ -23,10 +23,30 @@
 <body>
 
   <header>
-    <div class="d-grid gap-2 d-md-flex justify-content-md-end carrito">
-      <a href="#"> <img src="./imagenes/carrito.png" height="38px" width="60px"></a>
-      <button class="btn btn-primary" type="button">Carrito</button>
+    <div class="d-grid gap-2 d-md-flex justify-content-md-end carrito" id="logoCarrito">
+      <a href="#modalCarrito"> <img src="./imagenes/carrito.png" height="38px" width="60px"></a>
+      <button class="btn btn-primary" type="button" data-bs-toggle="modal"
+        data-bs-target="#modalCarrito">Carrito</button>
     </div>
+
+    <div class="modal" tabindex="-1" id="modalCarrito">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Carrito de compras</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>A continuación observará todos los productos que añadió al carrito</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancela todo</button>
+            <button type="button" class="btn btn-primary">Pagar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <nav class="navbar navbar-expand-lg bg-light">
       <div class="container-fluid d-flex m-3" id="barranav">
         <img class="m-1" src="./imagenes/logobazar.png" alt="" id="logoBazar">
@@ -45,10 +65,8 @@
                 Vajilla
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="./pages/tsuji.html">Tsuji</a></li>
-                <li><a class="dropdown-item" href="./pages/verbano.html">Verbano</a></li>
-                <li><a class="dropdown-item" href="./pages/biona.html">Biona</a></li>
-                <li><a class="dropdown-item" href="./pages/corona.html">Corona</a></li>
+                <li><a class="dropdown-item" href="./pages/vajilla.html">Tsuji</a></li>
+                <li><a class="dropdown-item" href="./pages/vajilla.html">Verbano</a></li>
               </ul>
             </li>
           </ul>
@@ -69,8 +87,7 @@
     <div class="container-fluid pb-5">
       <section class="row pb-5 px-3">
         <div class="col-md-6 px-4">
-          <h1 class="titulo py-3 animate__animated animate__tada animate__delay-2s animate__repeat-2">¿Quiénes
-            somos?</h1>
+          <h1 class="titulo py-3">¿Quiénes somos?</h1>
 
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam est placeat repellendus quae
             recusandae
@@ -90,8 +107,7 @@
       </section>
       <section class="row px-3">
         <div class="col-md-6 px-4">
-          <h1 class="titulo py-3 animate__animated animate__tada animate__delay-5s animate__repeat-2">¿Dónde
-            estamos?</h1>
+          <h1 class="titulo py-3">¿Dónde estamos?</h1>
 
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam est placeat repellendus quae
             recusandae
@@ -111,11 +127,14 @@
     </div>
 
     <section class="container-fluid my-3 border-top pt-4">
-      <h2 class="titulo pb-5">A continuación podés ver las distintas marcas de vajilla que tenemos para vos, elegí la tuya y
+      <h2 class="titulo pb-5">A continuación podés ver las distintas marcas de vajilla que tenemos para vos, elegí la
+        tuya y
         se te direccionará para que puedas ver todos los artículos que te podemos ofrecer</h2>
       <div class="row">
         <div class="col-md-6 px-5 d-flex flex-column align-items-center">
-          <a href="./pages/tsuji.html" class="titulo"><h1 class="titulo py-3">Porcelana Tsuji</h1></a>
+          <a href="./pages/tsuji.html" class="titulo">
+            <h1 class="titulo py-3">Porcelana Tsuji</h1>
+          </a>
           <!-- animate__animated animate__bounceInLeft animate__delay-1s -->
           <p>
             <!-- class="animate__animated animate__bounceInLeft animate__delay-2s" -->
@@ -132,7 +151,9 @@
           <!-- animate__animated animate__bounceInLeft animate__delay-3s -->
         </div>
         <div class="col-md-6 px-5 d-flex flex-column align-items-center">
-          <a href="./pages/verbano.html" class="titulo"><h1 class="titulo py-3">Porcelana Verbano</h1></a>
+          <a href="./pages/verbano.html" class="titulo">
+            <h1 class="titulo py-3">Porcelana Verbano</h1>
+          </a>
           <!-- animate__animated animate__bounceInRight animate__delay-1s -->
           <p>
             <!-- class="animate__animated animate__bounceInRight animate__delay-2s" -->
@@ -145,29 +166,6 @@
           </p>
           <a href="./pages/verbano.html"><img src="./imagenes/vajilla_verbano.jpg" class="img-fluid"></a>
           <!-- animate__animated animate__bounceInRight animate__delay-3s -->
-        </div>
-      </div>
-    </section>
-    <section class="container-fluid my-5">
-      <div class="row">
-        <!-- animate__animated animate__fadeIn animate__delay-5s -->
-        <div class="col-md-6 px-5 d-flex flex-column align-items-center">
-          <a href="./pages/corona.html" class="titulo"><h1 class="titulo py-3">Loza Corona</h1></a>
-          <p>
-            La vajilla enlozada corona se recomienda utilizar en cualquier ambito, tanto en la mesa de todos
-            los días como en ocaciones especiales. Gran balance precio-calidad. <br>
-
-          </p>
-          <a href="./pages/corona.html"><img src="./imagenes/vajilla_corona.jpg" class="img-fluid"></a>
-        </div>
-        <div class="col-md-6 px-5 d-flex flex-column align-items-center">
-          <a href="./pages/biona.html" class="titulo"><h1 class="titulo py-3">Loza Biona</h1></a>
-          <p>
-            La marca biona ofrece vajilla de cerámica y enlozadas de buena calidad. Es una vajilla atractiva
-            para usar todos los días. Comparado con las vajillas anteriores es la más económica. <br>
-
-          </p>
-          <a href="./pages/biona.html"><img src="./imagenes/vajilla_biona.jpg" class="img-fluid"></a>
         </div>
       </div>
     </section>

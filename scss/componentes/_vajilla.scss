@@ -1,0 +1,16 @@
+.centradoHorizontal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.centradoVertical{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.descuento{
+    text-decoration: none;
+    font-size: 26px;
+    color: #580f5a;
+}
+

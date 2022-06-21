@@ -2,6 +2,11 @@
   margin: 0px;
   padding: 0px; }
 
+#logoCarrito {
+  position: fixed;
+  right: 2px;
+  bottom: 120px; }
+
 #logoBazar {
   width: 20%;
   height: 20%;
@@ -61,8 +66,23 @@ footer {
   footer {
     font-size: 8px; } }
 
+.centradoHorizontal {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.centradoVertical {
+  display: flex;
+  flex-direction: column;
+  align-content: center; }
+
+.descuento {
+  text-decoration: none;
+  font-size: 26px;
+  color: #580f5a; }
+
 .carrito {
-  padding-right: 40px;
+  padding-right: 0px;
   padding-top: 20px; }
 
 .fondo-index {
