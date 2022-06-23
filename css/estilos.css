@@ -81,6 +81,9 @@ footer {
   font-size: 26px;
   color: #580f5a; }
 
+.desaparecer {
+  display: none; }
+
 .carrito {
   padding-right: 0px;
   padding-top: 20px; }

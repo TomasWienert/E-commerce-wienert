@@ -79,34 +79,45 @@ console.log(listaProductos) */
 
 /* Filtro */
 
-/* uso el silenciador de eventos para que no me recargue la pagina */
+/* creo todas las listas que voy a necesitar en la formula del buscador */
+
+let filtroMarca = []
+let filtroNombre = []
+let filtroTipo = []
+let lista1 = []
+let listaProductosBuscados = []
+
 
 function busquedaUsuario() {
+
+    /* traigo valor */
     let busqueda = document.getElementById("busqueda").value;
     console.log(busqueda);
-    
+    /* silencio evento de reinicio de pagina */
     const form = document.getElementById("eventoFormulario")
 
     form.addEventListener("submit", function (evento) {
         evento.preventDefault();
     })
+    /* uso el filtro para los tres tipos de datos que se pueden buscar */
+    filtroMarca = listaProductos.filter((elemento) => {
+        return elemento.marca === (busqueda.toLowerCase())
+    })
+
+    filtroNombre = listaProductos.filter((elemento) => {
+        return elemento.nombre === (busqueda.toLowerCase())
+    })
+
+    filtroTipo = listaProductos.filter((elemento) => {
+        return elemento.tipo === (busqueda.toLowerCase())
+    })
+
+    let lista1 = filtroMarca.concat(filtroNombre)
+    let listaProductosBuscados = lista1.concat(filtroTipo)
+
+    console.log(listaProductosBuscados)
+
 }
-
-/* let filtroMarca = listaProductos.filter((elemento) => {
-    return elemento.marca === (busqueda.toLowerCase())
-})
-
-let filtroNombre = listaProductos.filter((elemento) => {
-    return elemento.nombre === (busquedaUsuario.toLowerCase())
-})
-
-let filtroTipo = listaProductos.filter((elemento) => {
-    return elemento.tipo === (busquedaUsuario.toLowerCase())
-}) */
-
-/* console.log(filtroMarca)
-console.log(filtroNombre)
-console.log(filtroTipo) */
 
 /* Creo una funcion para aceptar solo pedidos menores o iguales a 24 unidades */
 
