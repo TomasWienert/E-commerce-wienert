@@ -39,6 +39,9 @@
           <div class="modal-body">
             <p>A continuación observará todos los productos que añadió al carrito</p>
           </div>
+          <div id="productosCarrito">
+
+          </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancela todo</button>
             <button type="button" class="btn btn-primary">Pagar</button>
@@ -79,406 +82,38 @@
     </nav>
   </header>
 
-  <main class="container">
+  <main>
+    <section id="contenedorProductos" class="container">
+      <div id="juegoCompletoOferta" class="mb-5">
+        <h1 class="titulo">Juegos completos (con un 10% de descuento)</h1>
+        <div class="row pt-4">
+          <div class="col-6 centradoHorizontal">
+            <h2 class="descuento">Juego completo Tsuji</h2>
+            <img src="../imagenes/vajilla_tsuji.jpg" alt="">
+            <p>precio</p>
+            <div>
+              <input id="" class="" type="text" placeholder="Cantidad max. 24 uds">
+              <button class="" type="submit" onclick="">Agregar al carrito</button>
+            </div>
+          </div>
+          <div class="col-6 centradoHorizontal">
+            <h2 class="descuento">Juego completo Verbano</h2>
+            <img src="../imagenes/vajilla_verbano.jpg" alt="">
+            <p>precio</p>
+            <div>
+              <input id="" class="" type="text" placeholder="Cantidad max. 24 uds">
+              <button class="" type="submit" onclick="">Agregar al carrito</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h1 class="titulo py-3">A continuación podés elegir productos por separado, entre 1 y 24 unidades por pedido</h1>
+      <div>
+        <div id="mostrarProductos" class="row">
 
-    <!-- promocion Tsuji -->
-    <section class="pb-4">
-      <h1 class="titulo py-5">Vajilla de porcelana Tsuji</h1>
-
-      <div class="row align-items-center">
-        <div class="col-md-6 align-self-center centradoHorizontal">
-          <p>Si te llevas el juego completo de vajilla (incluye plato playo, plato hondo, plato de postre y taza para
-            infusión con plato de apoyo) te
-            hacemos un 10% de descuento en el precio total</p><br><br>
-          <h2 class="descuento">Precio total del juego con descuento</h2>
-          <h2 class="descuento">$ 11050</h2>
-        </div>
-        <div class="col-md-6 centradoVertical container">
-          <div class="row">
-            <img src="../imagenes/vajilla_tsuji.jpg" alt="juegoCompletoTsuji" class="img-fluid">
-            <div class="col-6 pl-5 pt-4">
-              <input class="form-control me-2" type="Cantidad (max 24 ud)" placeholder="Cantidad (max 24 ud)"
-                aria-label="Cantidad (max 24 ud)">
-            </div>
-            <div class="col-6 pl-5 pt-4">
-              <button type="button" class="btn btn-primary">Agregar al carrito</button>
-            </div>
-          </div>
         </div>
       </div>
     </section>
-    <!-- Platos playos Tsuji -->
-    <section class="py-5 row">
-      <div class="col-sm-4 centradoHorizontal">
-        <p class="px-3">Plato playo de porcelana de 27 cm con grabado de flores azules</p>
-        <h2 class="descuento">Precio unitario: $2942</h2>
-        <img src="../imagenes/platoPlayoTsuji1.jpg" alt="" class="pt-4">
-        <div class="container">
-          <div class="row pt-4">
-            <div class="col-6">
-              <input class="form-control me-2" type="Cantidad (max 24 ud)" placeholder="Cantidad(max 24)"
-                aria-label="Cantidad(max 24)">
-            </div>
-            <div class="col-6 px-2">
-              <button type="button" class="btn btn-primary">Agregar al carrito</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4 centradoHorizontal">
-        <p class="px-3">Plato playo de porcelana de 26 cm con linea plateada externa</p>
-        <h2 class="descuento">Precio unitario: $2831</h2>
-        <img src="../imagenes/platoPlayoTsuji2.jpg" alt="" class="pt-4">
-        <div class="container">
-          <div class="row pt-4">
-            <div class="col-6">
-              <input class="form-control me-2" type="Cantidad (max 24 ud)" placeholder="Cantidad(max 24)"
-                aria-label="Cantidad (max 24 ud)">
-            </div>
-            <div class="col-6 px-2">
-              <button type="button" class="btn btn-primary">Agregar al carrito</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4 centradoHorizontal">
-        <p class="px-3">Plato playo de porcelana de 26 cm con linea dorada externa</p>
-        <h2 class="descuento">Precio unitario: $2768</h2>
-        <img src="../imagenes/platoPlayoTsuji3.jpg" alt="" class="pt-4">
-        <div class="container">
-          <div class="row pt-4">
-            <div class="col-6">
-              <input class="form-control me-2" type="Cantidad (max 24 ud)" placeholder="Cantidad(max 24)"
-                aria-label="Cantidad (max 24 ud)">
-            </div>
-            <div class="col-6 px-2">
-              <button type="button" class="btn btn-primary">Agregar al carrito</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Plato hondo Tsuji -->
-    <section class="py-5 row">
-      <div class="col-sm-4 centradoHorizontal">
-        <p class="px-3">Plato hondo de porcelana de 26 cm con grabado delícado color índigo</p>
-        <h2 class="descuento">Precio unitario: $2973</h2>
-        <img src="../imagenes/platoHondoTsuji1.jpg" alt="" class="pt-4">
-        <div class="container">
-          <div class="row pt-4">
-            <div class="col-6">
-              <input class="form-control me-2" type="Cantidad (max 24 ud)" placeholder="Cantidad(max 24)"
-                aria-label="Cantidad (max 24 ud)">
-            </div>
-            <div class="col-6 px-2">
-              <button type="button" class="btn btn-primary">Agregar al carrito</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4 centradoHorizontal">
-        <p class="px-3">Plato hondo de porcelana de 28 cm con detalles florales</p>
-        <h2 class="descuento">Precio unitario: $3067</h2>
-        <img src="../imagenes/platoHondoTsuji2.jpg" alt="" class="pt-4">
-        <div class="container">
-          <div class="row pt-4">
-            <div class="col-6">
-              <input class="form-control me-2" type="Cantidad (max 24 ud)" placeholder="Cantidad(max 24)"
-                aria-label="Cantidad (max 24 ud)">
-            </div>
-            <div class="col-6 px-2">
-              <button type="button" class="btn btn-primary">Agregar al carrito</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4 centradoHorizontal">
-        <p class="px-3">Plato hondo de porcelana de 26 cm con flores y detalles azules</p>
-        <h2 class="descuento">Precio unitario: $2942</h2>
-        <img src="../imagenes/platoHondoTsuji3.jpg" alt="" class="pt-4">
-        <div class="container">
-          <div class="row pt-4">
-            <div class="col-6">
-              <input class="form-control me-2" type="Cantidad (max 24 ud)" placeholder="Cantidad(max 24)"
-                aria-label="Cantidad (max 24 ud)">
-            </div>
-            <div class="col-6 px-2">
-              <button type="button" class="btn btn-primary">Agregar al carrito</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Plato de postre Tsuji -->
-    <section class="py-5 row">
-      <div class="col-sm-4 centradoHorizontal">
-        <p class="px-3">Plato para postre de porcelana de 20 cm con grabado delícado color índigo</p>
-        <h2 class="descuento">Precio unitario: $2045</h2>
-        <img src="../imagenes/platoPostreTsuji.jpg" alt="" class="pt-4">
-        <div class="container">
-          <div class="row pt-4">
-            <div class="col-6">
-              <input class="form-control me-2" type="Cantidad (max 24 ud)" placeholder="Cantidad(max 24)"
-                aria-label="Cantidad (max 24 ud)">
-            </div>
-            <div class="col-6 px-2">
-              <button type="button" class="btn btn-primary">Agregar al carrito</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Juego de cafe Tsuji -->
-    <section class="py-5 row">
-      <div class="col-sm-4 centradoHorizontal">
-        <p class="px-3">Plato de apoyo con taza de cafe de porcelana Tsuji</p>
-        <h2 class="descuento">Precio unitario: $4404</h2>
-        <img src="../imagenes/juegoCafeTsuji1.jpg" alt="" class="pt-4">
-        <div class="container">
-          <div class="row pt-4">
-            <div class="col-6">
-              <input class="form-control me-2" type="Cantidad (max 24 ud)" placeholder="Cantidad(max 24)"
-                aria-label="Cantidad (max 24 ud)">
-            </div>
-            <div class="col-6 px-2">
-              <button type="button" class="btn btn-primary">Agregar al carrito</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4 centradoHorizontal">
-        <p class="px-3">Plato de apoyo con taza de cafe de porcelana Tsuji</p>
-        <h2 class="descuento">Precio unitario: $4090</h2>
-        <img src="../imagenes/juegoCafeTsuji2.jpg" alt="" class="pt-4">
-        <div class="container">
-          <div class="row pt-4">
-            <div class="col-6">
-              <input class="form-control me-2" type="Cantidad (max 24 ud)" placeholder="Cantidad(max 24)"
-                aria-label="Cantidad (max 24 ud)">
-            </div>
-            <div class="col-6 px-2">
-              <button type="button" class="btn btn-primary">Agregar al carrito</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4 centradoHorizontal">
-        <p class="px-3">Plato de apoyo con taza de cafe de porcelana Tsuji</p>
-        <h2 class="descuento">Precio unitario: $4247</h2>
-        <img src="../imagenes/juegoCafeTsuji3.jpg" alt="" class="pt-4">
-        <div class="container">
-          <div class="row pt-4">
-            <div class="col-6">
-              <input class="form-control me-2" type="Cantidad (max 24 ud)" placeholder="Cantidad(max 24)"
-                aria-label="Cantidad (max 24 ud)">
-            </div>
-            <div class="col-6 px-2">
-              <button type="button" class="btn btn-primary">Agregar al carrito</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- promocion Verbano -->
-    <section class="pb-4">
-      <h1 class="titulo py-5">Vajilla de porcelana Verbano</h1>
-
-      <div class="row align-items-center">
-        <div class="col-md-6 align-self-center centradoHorizontal">
-          <p>Si te llevas el juego completo de vajilla (incluye plato playo, plato hondo, plato de postre y taza para
-            infusión con plato de apoyo) te
-            hacemos un 10% de descuento en el precio total</p><br><br>
-          <h2 class="descuento">Precio total del juego con descuento</h2>
-          <h2 class="descuento">$9556 </h2>
-        </div>
-        <div class="col-md-6 centradoVertical container">
-          <div class="row">
-            <img src="../imagenes/vajilla_verbano.jpg" alt="juegoCompletoVerbano" class="img-fluid">
-            <div class="col-6 pl-5 pt-4">
-              <input class="form-control me-2" type="Cantidad (max 24 ud)" placeholder="Cantidad (max 24 ud)"
-                aria-label="Cantidad (max 24 ud)">
-            </div>
-            <div class="col-6 pl-5 pt-4">
-              <button type="button" class="btn btn-primary">Agregar al carrito</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Platos playos Verbano -->
-    <section class="py-5 row">
-      <div class="col-sm-4 centradoHorizontal">
-        <p class="px-3">Plato playo de porcelana de 27 cm con grabado dorado</p>
-        <h2 class="descuento">Precio unitario: $2281</h2>
-        <img src="../imagenes/platoPlayoVerbano1.jpg" alt="" class="pt-4">
-        <div class="container">
-          <div class="row pt-4">
-            <div class="col-6">
-              <input class="form-control me-2" type="Cantidad (max 24 ud)" placeholder="Cantidad(max 24)"
-                aria-label="Cantidad (max 24 ud)">
-            </div>
-            <div class="col-6 px-2">
-              <button type="button" class="btn btn-primary">Agregar al carrito</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4 centradoHorizontal">
-        <p class="px-3">Plato playo de porcelana de 26 cm blanco liso</p>
-        <h2 class="descuento">Precio unitario: $2155</h2>
-        <img src="../imagenes/platoPlayoVerbano2.jpg" alt="" class="pt-4">
-        <div class="container">
-          <div class="row pt-4">
-            <div class="col-6">
-              <input class="form-control me-2" type="Cantidad (max 24 ud)" placeholder="Cantidad(max 24)"
-                aria-label="Cantidad (max 24 ud)">
-            </div>
-            <div class="col-6 px-2">
-              <button type="button" class="btn btn-primary">Agregar al carrito</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4 centradoHorizontal">
-        <p class="px-3">Plato playo de porcelana de 27 cm con grabado</p>
-        <h2 class="descuento">Precio unitario: $2249</h2>
-        <img src="../imagenes/platoPlayoVerbano3.jpg" alt="" class="pt-4">
-        <div class="container">
-          <div class="row pt-4">
-            <div class="col-6">
-              <input class="form-control me-2" type="Cantidad (max 24 ud)" placeholder="Cantidad(max 24)"
-                aria-label="Cantidad (max 24 ud)">
-            </div>
-            <div class="col-6 px-2">
-              <button type="button" class="btn btn-primary">Agregar al carrito</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Plato hondo Verbano -->
-    <section class="py-5 row">
-      <div class="col-sm-4 centradoHorizontal">
-        <p class="px-3">Plato hondo de porcelana de 26 cm</p>
-        <h2 class="descuento">Precio unitario: $2595</h2>
-        <img src="../imagenes/platoHondoVerbano1.jpg" alt="" class="pt-4">
-        <div class="container">
-          <div class="row pt-4">
-            <div class="col-6">
-              <input class="form-control me-2" type="Cantidad (max 24 ud)" placeholder="Cantidad(max 24)"
-                aria-label="Cantidad (max 24 ud)">
-            </div>
-            <div class="col-6 px-2">
-              <button type="button" class="btn btn-primary">Agregar al carrito</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4 centradoHorizontal">
-        <p class="px-3">Plato hondo de porcelana de 28 cm</p>
-        <h2 class="descuento">Precio unitario: $2517</h2>
-        <img src="../imagenes/platoHondoVerbano2.jpg" alt="" class="pt-4">
-        <div class="container">
-          <div class="row pt-4">
-            <div class="col-6">
-              <input class="form-control me-2" type="Cantidad (max 24 ud)" placeholder="Cantidad(max 24)"
-                aria-label="Cantidad (max 24 ud)">
-            </div>
-            <div class="col-6 px-2">
-              <button type="button" class="btn btn-primary">Agregar al carrito</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4 centradoHorizontal">
-        <p class="px-3">Plato hondo de porcelana de 26 cm</p>
-        <h2 class="descuento">Precio unitario: $2407</h2>
-        <img src="../imagenes/platoHondoVerbano3.jpg" alt="" class="pt-4">
-        <div class="container">
-          <div class="row pt-4">
-            <div class="col-6">
-              <input class="form-control me-2" type="Cantidad (max 24 ud)" placeholder="Cantidad(max 24)"
-                aria-label="Cantidad (max 24 ud)">
-            </div>
-            <div class="col-6 px-2">
-              <button type="button" class="btn btn-primary">Agregar al carrito</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Plato de postre Verbano -->
-    <section class="py-5 row">
-      <div class="col-sm-4 centradoHorizontal">
-        <p class="px-3">Plato para postre de porcelana de 20 cm</p>
-        <h2 class="descuento">Precio unitario: $1809</h2>
-        <img src="../imagenes/platoPostreVerbano.jpg" alt="" class="pt-4">
-        <div class="container">
-          <div class="row pt-4">
-            <div class="col-6">
-              <input class="form-control me-2" type="Cantidad (max 24 ud)" placeholder="Cantidad(max 24)"
-                aria-label="Cantidad (max 24 ud)">
-            </div>
-            <div class="col-6 px-2">
-              <button type="button" class="btn btn-primary">Agregar al carrito</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Juego de cafe Verbano -->
-    <section class="py-5 row">
-      <div class="col-sm-4 centradoHorizontal">
-        <p class="px-3">Plato de apoyo con taza de cafe de porcelana Verbano</p>
-        <h2 class="descuento">Precio unitario: $3697</h2>
-        <img src="../imagenes/juegoCafeVerbano1.jpg" alt="" class="pt-4">
-        <div class="container">
-          <div class="row pt-4">
-            <div class="col-6">
-              <input class="form-control me-2" type="Cantidad (max 24 ud)" placeholder="Cantidad(max 24)"
-                aria-label="Cantidad (max 24 ud)">
-            </div>
-            <div class="col-6 px-2">
-              <button type="button" class="btn btn-primary">Agregar al carrito</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4 centradoHorizontal">
-        <p class="px-3">Plato de apoyo con taza de cafe de porcelana Verbano</p>
-        <h2 class="descuento">Precio unitario: $3933</h2>
-        <img src="../imagenes/juegoCafeVerbano2.jpg" alt="" class="pt-4">
-        <div class="container">
-          <div class="row pt-4">
-            <div class="col-6">
-              <input class="form-control me-2" type="Cantidad (max 24 ud)" placeholder="Cantidad(max 24)"
-                aria-label="Cantidad (max 24 ud)">
-            </div>
-            <div class="col-6 px-2">
-              <button type="button" class="btn btn-primary">Agregar al carrito</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4 centradoHorizontal">
-        <p class="px-3">Plato de apoyo con taza de cafe de porcelana Verbano</p>
-        <h2 class="descuento">Precio unitario: $3807</h2>
-        <img src="../imagenes/juegoCafeVerbano3.jpg" alt="" class="pt-4">
-        <div class="container">
-          <div class="row pt-4">
-            <div class="col-6">
-              <input class="form-control me-2" type="Cantidad (max 24 ud)" placeholder="Cantidad(max 24)"
-                aria-label="Cantidad (max 24 ud)">
-            </div>
-            <div class="col-6 px-2">
-              <button type="button" class="btn btn-primary">Agregar al carrito</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
   </main>
 
   <footer class="container-fluid">
@@ -504,7 +139,9 @@
     </div>
   </footer>
 
-  <script src="../js/js.js"></script>
+  <script src="../js/productos.js"></script>
+  <script src="../js/script.js"></script>
+  <!-- <script src="../js/js.js"></script> -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
   </script>

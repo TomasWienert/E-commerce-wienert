@@ -4,19 +4,20 @@ const margenGanancia = 1.3;
 /* constructor para todos los articulos */
 
 class producto {
-    constructor(id, marca, nombre, tipo, precio) {
+    constructor(id, marca, nombre, tipo, precio, imagen) {
         this.id = id
         this.marca = marca
         this.nombre = nombre
         this.tipo = tipo
         this.precio = precio
+        this.imagen = imagen
     }
     mostrarProducto() {
 
     }
 }
 
-const platoPlayoTsuji1 = new producto(1, "tsuji", "plato playo", "plato", Math.round(1870 * iva * margenGanancia))
+const platoPlayoTsuji1 = new producto(1, "tsuji", "plato playo", "plato", Math.round(1870 * iva * margenGanancia), )
 const platoPlayoTsuji2 = new producto(2, "tsuji", "plato playo", "plato", Math.round(1800 * iva * margenGanancia))
 const platoPlayoTsuji3 = new producto(3, "tsuji", "plato playo", "plato", Math.round(1760 * iva * margenGanancia))
 const platoPlayoVerbano1 = new producto(4, "verbano", "plato playo", "plato", Math.round(1450 * iva * margenGanancia))
@@ -119,12 +120,33 @@ function busquedaUsuario() {
 
 }
 
-/* Creo una funcion para aceptar solo pedidos menores o iguales a 24 unidades */
+/* tomo el valor de cantidad para agregar al carrito */
 
-function pedidoCorrecto() {
+let filtroProductos = []
+
+function cantidadElegidaProducto() {
+    /* traigo valor */
+    let cantidadIngresada = document.getElementById("cantidadIngresada").value;
+    console.log(cantidadIngresada);
     if (cantidadIngresada < 0 || cantidadIngresada > 24) {
         alert("Ingresó un valor incorrecto, por favor coloque entre 1 y 24 unidades")
+    } else {
+        
     }
+}
+
+/* creador de elementos para el carrito */
+
+let carrito = []
+let cantidadingresada = 0
+
+function agregaProductoCarrito(cantidadElegidaProducto) {
+    cantidadElegidaProducto();
+    let productoCarrito = document.createElement("div")
+    productosCarrito.append(productoCarrito)
+    let imgCarrito = document.createElement("img")
+    imgCarrito.setAttribute("src", "http://127.0.0.1:5500/JavaScript/trabajo-practico/tienda-virtual/imagenes/vajilla_tsuji.jpg")
+    productoCarrito.append(imgCarrito)
 }
 
 
@@ -132,7 +154,7 @@ function pedidoCorrecto() {
 
 /* let usuario = prompt("Ingrese su nombre") */
 
-class carrito {
+/* class carrito {
     constructor() {
         this.productosElegidos = []
         this.total = 0
@@ -149,4 +171,4 @@ class carrito {
     calcularTotal() {
 
     }
-}
+} */
