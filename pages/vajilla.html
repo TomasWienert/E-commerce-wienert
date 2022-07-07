@@ -43,7 +43,7 @@
 
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancela todo</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="cancelaTodo">Cancela todo</button>
             <button type="button" class="btn btn-primary">Pagar</button>
           </div>
         </div>
@@ -75,7 +75,7 @@
           </ul>
           <form class="d-flex" role="Buscar" id="eventoFormulario">
             <input id="busqueda" class="form-control me-2" type="text" placeholder="Buscar" aria-label="Buscar">
-            <button class="btn btn-outline-success" type="submit" onclick="busquedaUsuario()">Buscar</button>
+            <button id="botonBuscar" class="btn btn-outline-success" type="submit">Buscar</button>
           </form>
         </div>
       </div>
@@ -85,10 +85,10 @@
   <main>
     <section id="contenedorProductos" class="container">
       <div id="juegoCompletoOferta" class="mb-5">
-        <h1 class="titulo">Juegos completos (con un 10% de descuento)</h1>
+        <h1 class="titulo pt-4">Juegos completos (con un 10% de descuento)</h1>
         <div class="row pt-4">
           <div class="col-6 centradoHorizontal">
-            <h2 class="descuento">Juego completo Tsuji</h2>
+            <h2 class="descuento pb-3">Juego completo Tsuji</h2>
             <img src="../imagenes/vajilla_tsuji.jpg" alt="">
             <p>precio</p>
             <div>
@@ -97,7 +97,7 @@
             </div>
           </div>
           <div class="col-6 centradoHorizontal">
-            <h2 class="descuento">Juego completo Verbano</h2>
+            <h2 class="descuento pb-3">Juego completo Verbano</h2>
             <img src="../imagenes/vajilla_verbano.jpg" alt="">
             <p>precio</p>
             <div>
@@ -107,7 +107,7 @@
           </div>
         </div>
       </div>
-      <h1 class="titulo py-3">A continuación podés elegir productos por separado, entre 1 y 24 unidades por pedido</h1>
+      <h1 class="titulo py-5">A continuación podés elegir productos por separado, entre 1 y 24 unidades por pedido</h1>
       <div>
         <div id="mostrarProductos" class="row">
 
