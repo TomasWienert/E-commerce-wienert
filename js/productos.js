@@ -14,8 +14,9 @@ class producto {
     }
 
 }
+/* http://127.0.0.1:5500/JavaScript/trabajo-practico/tienda-virtual/imagenes/platoPlayoTsuji1.jpg */
 
-const platoPlayoTsuji1 = new producto(1, "tsuji", "plato playo", "plato", Math.round(1870 * iva * margenGanancia), "http://127.0.0.1:5500/JavaScript/trabajo-practico/tienda-virtual/imagenes/platoPlayoTsuji1.jpg")
+const platoPlayoTsuji1 = new producto(1, "tsuji", "plato playo", "plato", Math.round(1870 * iva * margenGanancia), "../imagenes/platoPlayoTsuji1.jpg")
 const platoPlayoTsuji2 = new producto(2, "tsuji", "plato playo", "plato", Math.round(1800 * iva * margenGanancia), "http://127.0.0.1:5500/JavaScript/trabajo-practico/tienda-virtual/imagenes/platoPlayoTsuji2.jpg")
 const platoPlayoTsuji3 = new producto(3, "tsuji", "plato playo", "plato", Math.round(1760 * iva * margenGanancia), "http://127.0.0.1:5500/JavaScript/trabajo-practico/tienda-virtual/imagenes/platoPlayoTsuji3.jpg")
 const platoPlayoVerbano1 = new producto(4, "verbano", "plato playo", "plato", Math.round(1450 * iva * margenGanancia), "http://127.0.0.1:5500/JavaScript/trabajo-practico/tienda-virtual/imagenes/platoPlayoVerbano1.jpg")
