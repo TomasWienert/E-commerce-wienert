@@ -29,7 +29,7 @@
         data-bs-target="#modalCarrito">Carrito</button>
     </div>
 
-    <div class="modal" tabindex="-1" id="modalCarrito">
+    <div class="modal p-5" tabindex="-1" id="modalCarrito">
       <div class="modal-dialog modal-xl">
         <div class="modal-content">
           <div class="modal-header">
@@ -43,7 +43,8 @@
 
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="cancelaTodo">Cancela todo</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="cancelaTodo">Cancela
+              todo</button>
             <button type="button" class="btn btn-primary">Pagar</button>
           </div>
         </div>
@@ -89,25 +90,31 @@
         <div class="row pt-4">
           <div class="col-6 centradoHorizontal">
             <h2 class="descuento pb-3">Juego completo Tsuji</h2>
-            <img src="../imagenes/vajilla_tsuji.jpg" alt="">
-            <p>precio</p>
+            <img src="../imagenes/vajilla_tsuji.jpg" alt="" class="img-fluid">
+            <div id="precioTsujiCompleto" class="precioPagina py-1 mt-3"></div>
             <div>
-              <input id="" class="" type="text" placeholder="Cantidad max. 24 uds">
-              <button class="" type="submit" onclick="">Agregar al carrito</button>
+              <!-- <input id="" class="" type="text" placeholder="Cantidad max. 24 uds"> -->
+              <button class="btn btn-outline-success" type="submit" onclick=""
+                id="botonAgregarCarritoTsujiCompleto">Agregar al
+                carrito</button>
             </div>
           </div>
           <div class="col-6 centradoHorizontal">
             <h2 class="descuento pb-3">Juego completo Verbano</h2>
-            <img src="../imagenes/vajilla_verbano.jpg" alt="">
-            <p>precio</p>
+            <img src="../imagenes/vajilla_verbano.jpg" alt="" class="img-fluid">
+            <div id="precioVerbanoCompleto" class="precioPagina py-1 mt-3"></div>
             <div>
-              <input id="" class="" type="text" placeholder="Cantidad max. 24 uds">
-              <button class="" type="submit" onclick="">Agregar al carrito</button>
+              <!-- <input id="" class="" type="text" placeholder="Cantidad max. 24 uds"> -->
+              <button class="btn btn-outline-success" type="submit" onclick=""
+                id="botonAgregarCarritoVerbanoCompleto">Agregar al
+                carrito</button>
             </div>
           </div>
         </div>
       </div>
-      <h1 class="titulo py-5">A continuación podés elegir productos por separado, entre 1 y 24 unidades por pedido</h1>
+      <h1 class="titulo py-5">A continuación podés elegir productos individualmente</h1>
+      <button id="mostrarTodo" class="btn btn-outline-success mb-4 mr-4"
+        type="submit">Mostrar todos los productos</button>
       <div>
         <div id="mostrarProductos" class="row">
 

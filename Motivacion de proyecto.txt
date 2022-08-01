@@ -1,0 +1,8 @@
+La idea de este proyecto fue hacer una e-comerce para el bazar de mi suegro. Hoy en dia tienen potencial pero la ubicación del bazar no les permite alcanzar 
+el potencial de venta que todos creemos que tiene. Hicimos una prueba de vender por instagram, ingresar al mundo tecnologico y funcionó muy bien, aunque el problema
+era la necesidad de estar encima para responder a los clientes. Con este proyecto me plantee el objetivo de seguir con la linea de vender por internet, aprovechar la 
+tecnología y hacer crecer al bazar. Otro objetivo es poder vender por unidades en la página, unidades sueltas, ya que muchas veces los clientes no compran juegos 
+completos y se acumula stock de unidades.
+Para resolver el proyecto realicé una pagina principal en donde se de a conocer el bazar y las marcas principales (la idea a futuro es ampliar y agrergar productos a 
+la pagina) y luego otra página en donde se ven principalmente juegos completos (que se verán siempre porque al bazar le conviene vender por juego) y 
+luego los productos por separado, los cuales se podran filtrar en el buscador.
